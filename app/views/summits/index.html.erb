@@ -5,6 +5,9 @@
 <h1>Who Has Walked A Málaga Summit Recently? YOU?</h1>
 
 <p>...simply walk up one of the local hills around Málaga and take a selfie, and upload to instagram a picture of your smiling face.</p>
+<p>
+  <%= link_to "Add Your New Summit Picture", new_summit_path %>
+</p>
 
 <div id="summits">
   <% @summits.each do |summit| %>
@@ -14,9 +17,11 @@
     </p>
   <% end %>
 </div>
+<p>
+  <%= link_to "Add Your New Summit Picture", new_summit_path %>
+</p>
 
-<%= link_to "Add Your New Summit Picture", new_summit_path %>
-
+<div id="about">
 <p>
   Hey, this is a quick project, to start the week typing 'rails new'.
   <br/>I'm Ian, and have been doing Ruby On Rails development for sometime.
@@ -29,4 +34,8 @@
 
 <p>
   Now go walk up a hill tomorrow :)
+</p>
+</div>
+<p>
+  Built with Ruby On Rails 8. With Bootstrap. Hosted on Fly.io.
 </p>
