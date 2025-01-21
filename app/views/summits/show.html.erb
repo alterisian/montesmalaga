@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @summit %>
+
+<div>
+  <%= link_to "Edit this summit", edit_summit_path(@summit) %> |
+  <%= link_to "Back to summits", summits_path %>
+
+  <%= button_to "Destroy this summit", @summit, method: :delete %>
+</div>

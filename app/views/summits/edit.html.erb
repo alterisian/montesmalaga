@@ -1,0 +1,12 @@
+<% content_for :title, "Editing summit" %>
+
+<h1>Editing summit</h1>
+
+<%= render "form", summit: @summit %>
+
+<br>
+
+<div>
+  <%= link_to "Show this summit", @summit %> |
+  <%= link_to "Back to summits", summits_path %>
+</div>

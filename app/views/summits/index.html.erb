@@ -1,0 +1,32 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Summits" %>
+
+<h1>Who Has Walked A Málaga Summit Recently? YOU?</h1>
+
+<p>...simply walk up one of the local hills around Málaga and take a selfie, and upload to instagram a picture of your smiling face.</p>
+
+<div id="summits">
+  <% @summits.each do |summit| %>
+    <%= render summit %>
+    <p>
+      <%= link_to "Show this summit", summit %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "Add Your New Summit Picture", new_summit_path %>
+
+<p>
+  Hey, this is a quick project, to start the week typing 'rails new'.
+  <br/>I'm Ian, and have been doing Ruby On Rails development for sometime.
+  <br/>It's quite a joy to type 'rails new', with a random project idea.
+  <br/>Now, for sure, I've been using tools like v0.dev, claude.ai and chatgpt for over a year.
+  <br/>But I'm still thinking when 'rails new' becomes like v0 it's going to be a game changer.
+  <br/>Combine that with Chris's template, and something like bootstrap themes, and deployment to fly or heroku, and automate it all, and it'll be amazing.
+  <br/>This evening was a pleasant distraction from ToTravelTo.com where we are looking for new developers.
+</p>
+
+<p>
+  Now go walk up a hill tomorrow :)
+</p>

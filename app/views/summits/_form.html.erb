@@ -1,0 +1,22 @@
+<div class="container mt-4">
+  <%= form_with(model: @summit, html: { class: "col-md-6" }) do |form| %>
+    <div class="mb-3">
+      <%= form.label :mountain_id, class: "form-label" %>
+      <%= form.collection_select :mountain_id, 
+                               @mountains, 
+                               :id, 
+                               :name, 
+                               { prompt: "Select a mountain" }, 
+                               { class: "form-select" } %>
+    </div>
+
+    <div class="mb-3">
+      <%= form.label :insta, class: "form-label" %>
+      <%= form.text_field :insta, class: "form-control" %>
+    </div>
+
+    <div class="mb-3">
+      <%= form.submit class: "btn btn-primary" %>
+    </div>
+  <% end %>
+</div>

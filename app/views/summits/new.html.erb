@@ -1,0 +1,11 @@
+<% content_for :title, "New summiting" %>
+
+<h1>New Summit</h1>
+
+<%= render "form", summit: @summit %>
+
+<br>
+
+<div>
+  <%= link_to "Back to Summits", summits_path %>
+</div>
