@@ -11,6 +11,12 @@
 ARG RUBY_VERSION=3.2.2
 FROM docker.io/library/ruby:$RUBY_VERSION-slim AS base
 
+# Install Node.js and npm
+RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
+RUN apt-get update -qq && \
+    apt-get install -y nodejs && \
+    npm install -g npm@latest
+
 # Rails app lives here
 WORKDIR /rails
 
