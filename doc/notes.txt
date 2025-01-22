@@ -1,0 +1,11 @@
+notes
+
+Postgres cluster malagamontesflypg created
+  Username:    postgres
+  Password:    hnlYs9QtIxTfYTd
+  Hostname:    malagamontesflypg.internal
+  Flycast:     fdaa:9:9a32:0:1::5
+  Proxy port:  5432
+  Postgres port:  5433
+  Connection string: postgres://postgres:hnlYs9QtIxTfYTd@malagamontesflypg.flycast:5432
+

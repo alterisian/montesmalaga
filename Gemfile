@@ -10,6 +10,8 @@ gem "sqlite3", ">= 2.1"
 gem "puma", ">= 5.0"
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
+# gem 'cssbundling-rails' # for bootstrap; causes many yarn and node dependency errors and scss warnings
+
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
@@ -63,4 +65,6 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem 'cssbundling-rails' # bootstrap
+gem "dockerfile-rails", ">= 1.7", :group => :development
+
+gem "pg", "~> 1.5"
